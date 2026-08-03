@@ -2,37 +2,107 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <title>UPPD Kota Semarang II</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap Icon -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true
+
+});
+
+</script>
+
+<div id="loader">
+
+<div class="spinner-border text-primary">
+
+</div>
+
+</div>
+
 <body>
 
-    <!-- Navbar -->
+    <!-- ================= TOP BAR ================= -->
 
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="topbar">
 
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#">
-                UPPD Semarang II
+            <div class="left">
+
+                <span>
+                    <i class="bi bi-telephone-fill"></i>
+                    (024) 12345678
+                </span>
+
+                <span>
+                    <i class="bi bi-envelope-fill"></i>
+                    uppd2@jatengprov.go.id
+                </span>
+
+            </div>
+
+            <div class="right">
+
+                <button class="lang-btn active">
+                    🇮🇩 ID
+                </button>
+
+                <button class="lang-btn">
+                    🇬🇧 EN
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+
+                <img src="https://placehold.co/50x50"
+                    class="logo">
+
+                <div>
+
+                    <h5>UPPD Kota Semarang II</h5>
+
+                    <small>Bapenda Provinsi Jawa Tengah</small>
+
+                </div>
+
             </a>
 
             <button class="navbar-toggler"
@@ -49,23 +119,27 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a href="#" class="nav-link active">Beranda</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profil</a>
+                        <a href="#" class="nav-link">Profil</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Layanan</a>
+                        <a href="#" class="nav-link">Layanan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Berita</a>
+                        <a href="#" class="nav-link">Berita</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a href="#" class="nav-link">Galeri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Kontak</a>
                     </li>
 
                 </ul>
@@ -76,35 +150,81 @@
 
     </nav>
 
-    <!-- Hero -->
+<!-- ================= HERO ================= -->
 
-    <section class="hero">
+<section class="hero">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row align-items-center">
+        <div class="row align-items-center">
 
-                <div class="col-lg-6">
+            <div class="col-lg-6">
 
-                    <h1>
-                        Pelayanan Pajak Kendaraan yang Cepat, Mudah, dan Transparan
-                    </h1>
+                <span class="hero-badge">
+                    Website Resmi
+                </span>
 
-                    <p>
-                        Selamat datang di website resmi
-                        UPPD Kota Semarang II.
-                    </p>
+                <h1>
+                    Pelayanan Pajak Kendaraan Bermotor
+                    <span>Lebih Cepat & Modern</span>
+                </h1>
 
-                    <button class="btn btn-primary btn-lg">
-                        Layanan Kami
-                    </button>
+                <p>
+                    UPPD Kota Semarang II berkomitmen memberikan pelayanan
+                    yang cepat, transparan, profesional, dan mudah diakses
+                    oleh seluruh masyarakat Jawa Tengah.
+                </p>
+
+                <div class="hero-button">
+
+                    <a href="#" class="btn btn-primary btn-lg">
+                        <i class="bi bi-car-front-fill"></i>
+                        Layanan
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-file-earmark-text"></i>
+                        Persyaratan
+                    </a>
 
                 </div>
 
-                <div class="col-lg-6 text-center">
+                <div class="hero-info">
 
-                    <img src="assets/img/hero.png"
-                        class="img-fluid hero-img">
+                    <div>
+
+                        <h3>20+</h3>
+
+                        <span>Layanan</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>15K+</h3>
+
+                        <span>Wajib Pajak</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>98%</h3>
+
+                        <span>Kepuasan</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="hero-image">
+
+                    <img src="https://placehold.co/700x500?text=Gedung+UPPD"
+                        class="img-fluid">
 
                 </div>
 
@@ -112,57 +232,123 @@
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Informasi -->
+</section>
 
-    <section class="container py-5">
+<!-- ================= QUICK SERVICE ================= -->
+
+<section class="quick-service">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Layanan Cepat</span>
+
+            <h2>Akses Layanan Utama</h2>
+
+            <p>
+                Pilih layanan yang ingin Anda gunakan dengan cepat.
+            </p>
+
+        </div>
 
         <div class="row g-4">
 
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
 
-                <div class="info-card">
+                <div class="service-card">
 
-                    <i class="bi bi-car-front-fill"></i>
+                    <div class="service-icon">
+                        <i class="bi bi-car-front-fill"></i>
+                    </div>
 
-                    <h5>Perpanjang STNK</h5>
+                    <h4>Perpanjang STNK</h4>
 
-                </div>
+                    <p>
+                        Informasi syarat dan proses perpanjangan STNK tahunan maupun 5 tahunan.
+                    </p>
 
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="info-card">
-
-                    <i class="bi bi-credit-card"></i>
-
-                    <h5>Pajak Tahunan</h5>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="info-card">
-
-                    <i class="bi bi-geo-alt-fill"></i>
-
-                    <h5>Samsat Keliling</h5>
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
 
-                <div class="info-card">
+                <div class="service-card">
 
-                    <i class="bi bi-info-circle-fill"></i>
+                    <div class="service-icon">
 
-                    <h5>Informasi Pajak</h5>
+                        <i class="bi bi-credit-card-2-front-fill"></i>
+
+                    </div>
+
+                    <h4>Pajak Tahunan</h4>
+
+                    <p>
+                        Cek informasi pembayaran pajak kendaraan bermotor tahunan.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                    </div>
+
+                    <h4>Samsat Keliling</h4>
+
+                    <p>
+                        Lihat jadwal dan lokasi pelayanan Samsat Keliling terbaru.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-file-earmark-text-fill"></i>
+
+                    </div>
+
+                    <h4>Persyaratan</h4>
+
+                    <p>
+                        Daftar dokumen yang harus dibawa sesuai jenis layanan.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
                 </div>
 
@@ -170,37 +356,151 @@
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Statistik -->
+</section>
 
-    <section class="stats">
+<!-- ================= ABOUT ================= -->
 
-        <div class="container">
+<section class="about">
 
-            <div class="row text-center">
+    <div class="container">
 
-                <div class="col-md-4">
+        <div class="row align-items-center g-5">
 
-                    <h2>15K+</h2>
+            <div class="col-lg-6">
+
+                <div class="about-image">
+
+                    <img src="https://placehold.co/700x500?text=Gedung+UPPD"
+                        class="img-fluid"
+                        alt="Gedung UPPD">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    Tentang Kami
+                </span>
+
+                <h2>
+                    UPPD Kota Semarang II
+                </h2>
+
+                <p>
+
+                    Unit Pengelolaan Pendapatan Daerah Kota Semarang II
+                    merupakan unit pelayanan di bawah Badan Pengelolaan
+                    Pendapatan Daerah Provinsi Jawa Tengah yang melayani
+                    administrasi pajak kendaraan bermotor secara profesional,
+                    transparan, dan akuntabel.
+
+                </p>
+
+                <div class="about-list">
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Pelayanan Cepat
+
+                    </div>
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Transparan
+
+                    </div>
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Profesional
+
+                    </div>
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Ramah Masyarakat
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn btn-primary mt-4">
+
+                    Selengkapnya
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter" data-target="20">0</h2>
+
+                    <p>Layanan</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter" data-target="15000">0</h2>
 
                     <p>Wajib Pajak</p>
 
                 </div>
 
-                <div class="col-md-4">
+            </div>
 
-                    <h2>350+</h2>
+            <div class="col-lg-3 col-md-6">
 
-                    <p>Layanan / Hari</p>
+                <div class="stat-card">
+
+                    <h2 class="counter" data-target="98">0</h2>
+
+                    <p>% Kepuasan</p>
 
                 </div>
 
-                <div class="col-md-4">
+            </div>
 
-                    <h2>98%</h2>
+            <div class="col-lg-3 col-md-6">
 
-                    <p>Kepuasan</p>
+                <div class="stat-card">
+
+                    <h2 class="counter" data-target="15">0</h2>
+
+                    <p>Tahun Pelayanan</p>
 
                 </div>
 
@@ -208,22 +508,868 @@
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Footer -->
+</section>
 
-    <footer>
+<!-- ================= SERVICES ================= -->
 
-        <div class="container">
+<section class="services">
 
-            © 2026 UPPD Kota Semarang II
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Layanan Kami</span>
+
+            <h2>Layanan Unggulan UPPD Kota Semarang II</h2>
+
+            <p>
+                Berbagai layanan pajak kendaraan bermotor yang dapat diakses oleh masyarakat.
+            </p>
 
         </div>
 
-    </footer>
+        <div class="row g-4">
 
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-car-front-fill"></i>
+
+                    </div>
+
+                    <h4>Perpanjang STNK Tahunan</h4>
+
+                    <p>
+                        Pelayanan pembayaran Pajak Kendaraan Bermotor tahunan secara cepat dan mudah.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-arrow-repeat"></i>
+
+                    </div>
+
+                    <h4>Perpanjang STNK 5 Tahunan</h4>
+
+                    <p>
+                        Layanan penggantian STNK beserta pemeriksaan fisik kendaraan.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-credit-card-fill"></i>
+
+                    </div>
+
+                    <h4>Pembayaran PKB</h4>
+
+                    <p>
+                        Informasi pembayaran Pajak Kendaraan Bermotor secara resmi.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-truck-front-fill"></i>
+
+                    </div>
+
+                    <h4>Mutasi Kendaraan</h4>
+
+                    <p>
+                        Pelayanan mutasi kendaraan masuk maupun keluar daerah.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-file-earmark-text-fill"></i>
+
+                    </div>
+
+                    <h4>Balik Nama Kendaraan</h4>
+
+                    <p>
+                        Informasi proses Balik Nama Kendaraan Bermotor sesuai ketentuan.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-box">
+
+                    <div class="service-top">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                    </div>
+
+                    <h4>Samsat Keliling</h4>
+
+                    <p>
+                        Jadwal dan lokasi pelayanan Samsat Keliling di wilayah Semarang.
+                    </p>
+
+                    <a href="#">
+                        Selengkapnya
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWS ================= -->
+
+<section class="news">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Berita Terbaru</span>
+
+            <h2>Informasi dan Pengumuman</h2>
+
+            <p>
+                Ikuti informasi terbaru mengenai pelayanan UPPD Kota Semarang II.
+            </p>
+
+        </div>
+
+        <div class="news-search">
+
+            <input type="text"
+                placeholder="Cari berita...">
+
+            <button>
+
+                <i class="bi bi-search"></i>
+
+            </button>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-4">
+
+                <div class="news-card">
+
+                    <img src="https://placehold.co/600x400?text=Berita+1">
+
+                    <div class="news-body">
+
+                        <span class="badge-news">
+                            Pengumuman
+                        </span>
+
+                        <small>
+
+                            <i class="bi bi-calendar3"></i>
+
+                            03 Agustus 2026
+
+                        </small>
+
+                        <h4>
+
+                            Pelayanan Samsat Tetap Berjalan Normal
+
+                        </h4>
+
+                        <p>
+
+                            Informasi mengenai pelayanan pajak kendaraan bermotor
+                            selama minggu ini.
+
+                        </p>
+
+                        <a href="#">
+
+                            Baca Selengkapnya
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-4">
+
+                <div class="news-card">
+
+                    <img src="https://placehold.co/600x400?text=Berita+2">
+
+                    <div class="news-body">
+
+                        <span class="badge-news">
+                            Berita
+                        </span>
+
+                        <small>
+
+                            <i class="bi bi-calendar3"></i>
+
+                            01 Agustus 2026
+
+                        </small>
+
+                        <h4>
+
+                            Jadwal Samsat Keliling Minggu Ini
+
+                        </h4>
+
+                        <p>
+
+                            Lokasi pelayanan Samsat Keliling di Kota Semarang.
+
+                        </p>
+
+                        <a href="#">
+
+                            Baca Selengkapnya
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-4">
+
+                <div class="news-card">
+
+                    <img src="https://placehold.co/600x400?text=Berita+3">
+
+                    <div class="news-body">
+
+                        <span class="badge-news">
+                            Informasi
+                        </span>
+
+                        <small>
+
+                            <i class="bi bi-calendar3"></i>
+
+                            28 Juli 2026
+
+                        </small>
+
+                        <h4>
+
+                            Tips Membayar Pajak Kendaraan Tepat Waktu
+
+                        </h4>
+
+                        <p>
+
+                            Beberapa informasi penting untuk wajib pajak kendaraan.
+
+                        </p>
+
+                        <a href="#">
+
+                            Baca Selengkapnya
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMATION ================= -->
+
+<section class="information">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Pengumuman -->
+
+            <div class="col-lg-4">
+
+                <div class="info-panel">
+
+                    <h3>
+
+                        <i class="bi bi-megaphone-fill"></i>
+
+                        Pengumuman
+
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <span>03 Agustus</span>
+
+                            Libur Nasional 17 Agustus
+
+                        </li>
+
+                        <li>
+
+                            <span>01 Agustus</span>
+
+                            Program Pemutihan Pajak
+
+                        </li>
+
+                        <li>
+
+                            <span>28 Juli</span>
+
+                            Perubahan Jam Operasional
+
+                        </li>
+
+                        <li>
+
+                            <span>25 Juli</span>
+
+                            Pelayanan Samsat Keliling
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Jadwal -->
+
+            <div class="col-lg-4">
+
+                <div class="info-panel">
+
+                    <h3>
+
+                        <i class="bi bi-calendar-event-fill"></i>
+
+                        Jadwal Samsat Keliling
+
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <span>Senin</span>
+
+                            Banyumanik
+
+                        </li>
+
+                        <li>
+
+                            <span>Selasa</span>
+
+                            Pedurungan
+
+                        </li>
+
+                        <li>
+
+                            <span>Rabu</span>
+
+                            Tembalang
+
+                        </li>
+
+                        <li>
+
+                            <span>Kamis</span>
+
+                            Genuk
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Jam -->
+
+            <div class="col-lg-4">
+
+                <div class="info-panel">
+
+                    <h3>
+
+                        <i class="bi bi-clock-fill"></i>
+
+                        Jam Operasional
+
+                    </h3>
+
+                    <ul>
+
+                        <li>
+
+                            Senin - Kamis
+
+                            <strong>08.00 - 15.00</strong>
+
+                        </li>
+
+                        <li>
+
+                            Jumat
+
+                            <strong>08.00 - 11.00</strong>
+
+                        </li>
+
+                        <li>
+
+                            Sabtu
+
+                            <strong>08.00 - 12.00</strong>
+
+                        </li>
+
+                        <li>
+
+                            Minggu
+
+                            <strong>Tutup</strong>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Galeri</span>
+
+            <h2>Dokumentasi Kegiatan</h2>
+
+            <p>
+                Dokumentasi pelayanan dan kegiatan UPPD Kota Semarang II.
+            </p>
+
+        </div>
+
+        <div class="gallery-filter">
+
+            <button class="active">Semua</button>
+            <button>Pelayanan</button>
+            <button>Sosialisasi</button>
+            <button>Samsat Keliling</button>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="https://placehold.co/700x500?text=Gallery+1">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="https://placehold.co/700x500?text=Gallery+2">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="https://placehold.co/700x500?text=Gallery+3">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="gallery-card">
+
+                    <img src="https://placehold.co/900x500?text=Gallery+4">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="gallery-card">
+
+                    <img src="https://placehold.co/900x500?text=Gallery+5">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<span>FAQ</span>
+
+<h2>Pertanyaan yang Sering Ditanyakan</h2>
+
+</div>
+
+<div class="accordion" id="faq">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#q1">
+
+Apa syarat perpanjang STNK?
+
+</button>
+
+</h2>
+
+<div id="q1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+KTP, STNK asli, dan bukti pembayaran pajak.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#q2">
+
+Apakah bisa membayar dengan QRIS?
+
+</button>
+
+</h2>
+
+<div id="q2"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Ya, pembayaran mengikuti metode yang tersedia pada loket pelayanan.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#q3">
+
+Bagaimana melihat jadwal Samsat Keliling?
+
+</button>
+
+</h2>
+
+<div id="q3"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Silakan lihat pada menu Jadwal Samsat Keliling di halaman utama.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MAP ================= -->
+
+<section class="maps">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Lokasi</span>
+
+            <h2>Kunjungi Kantor Kami</h2>
+
+            <p>
+                UPPD Kota Semarang II
+            </p>
+
+        </div>
+
+        <div class="map-card">
+
+            <iframe
+                src="https://www.google.com/maps?q=UPPD+Kota+Semarang+II&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<h3>UPPD Kota Semarang II</h3>
+
+<p>
+
+Website resmi Unit Pengelolaan Pendapatan Daerah
+Provinsi Jawa Tengah.
+
+</p>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>Menu</h5>
+
+<ul>
+
+<li><a href="#">Beranda</a></li>
+
+<li><a href="#">Profil</a></li>
+
+<li><a href="#">Layanan</a></li>
+
+<li><a href="#">Berita</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-2">
+
+<h5>Kontak</h5>
+
+<p>
+
+📞 (024)12345678
+
+</p>
+
+<p>
+
+📧 uppd2@jatengprov.go.id
+
+</p>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>Ikuti Kami</h5>
+
+<div class="social">
+
+<a href="#"><i class="bi bi-facebook"></i></a>
+
+<a href="#"><i class="bi bi-instagram"></i></a>
+
+<a href="#"><i class="bi bi-youtube"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="copyright">
+
+© 2026 UPPD Kota Semarang II
+
+</div>
+
+</div>
+
+</footer>
+
+<a href="#"
+class="wa-button">
+
+<i class="bi bi-whatsapp"></i>
+
+</a>
+
+<button id="topBtn">
+
+<i class="bi bi-arrow-up"></i>
+
+</button>
+
+<script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
