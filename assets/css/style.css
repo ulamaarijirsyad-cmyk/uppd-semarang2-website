@@ -157,6 +157,104 @@ NAVBAR
 }
 
 /* =============================
+   DROPDOWN MENU
+============================= */
+
+.navbar .dropdown{
+    position: relative;
+}
+
+.profile-menu{
+    width:320px;
+    margin-top:15px;
+    padding:15px 0;
+    border:none;
+    border-radius:0;
+    background:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    display:block;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(15px);
+    transition:.3s;
+}
+
+.navbar .dropdown:hover>.profile-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+
+.profile-menu .dropdown-item{
+
+    padding:15px 25px;
+    font-size:17px;
+    color:#222;
+    transition:.25s;
+
+}
+
+.profile-menu .dropdown-item:hover{
+
+    background:#0A88B5;
+    color:#fff;
+
+}
+
+/* submenu */
+
+.dropdown-submenu{
+
+    position:relative;
+
+}
+
+.dropdown-submenu>.submenu{
+
+    position:absolute;
+    left:100%;
+    top:0;
+
+    width:250px;
+
+    background:#fff;
+
+    padding:15px 0;
+
+    display:none;
+
+    list-style:none;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.dropdown-submenu:hover>.submenu{
+
+    display:block;
+
+}
+
+.submenu li a{
+
+    display:block;
+    padding:13px 25px;
+    text-decoration:none;
+    color:#222;
+
+}
+
+.submenu li a:hover{
+
+    background:#0A88B5;
+    color:white;
+
+}
+
+/* =============================
 
 HERO
 
