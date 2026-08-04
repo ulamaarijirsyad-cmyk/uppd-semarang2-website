@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi & Misi - UPPD Kota Semarang II</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .visi-box {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        .visi-box::after {
+            content: "\F33B";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            right: -20px;
+            bottom: -30px;
+            font-size: 160px;
+            opacity: 0.15;
+            color: white;
+        }
+        .misi-number {
+            width: 38px;
+            height: 38px;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .program-card {
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            height: 100%;
+            background-color: #ffffff;
+        }
+        .program-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+            border-color: #0d6efd;
+        }
+        .program-badge {
+            background-color: #0d6efd;
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="bi bi-arrow-left me-2"></i>Kembali ke Beranda
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <!-- Judul Utama -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-primary">VISI & MISI</h2>
+                    <p class="text-secondary fw-medium">Gubernur Provinsi Jawa Tengah</p>
+                    <div class="mx-auto bg-primary" style="height: 3px; width: 60px; border-radius: 2px;"></div>
+                </div>
+
+                <!-- Card Visi -->
+                <div class="visi-box p-4 p-md-5 mb-5 shadow-sm text-center">
+                    <span class="badge bg-white text-primary px-3 py-2 rounded-pill fw-semibold mb-3">
+                        <i class="bi bi-eye-fill me-1"></i> VISI UTAMA
+                    </span>
+                    <h3 class="fw-bold mb-0 style-quote fs-2" style="line-height: 1.5;">
+                        “Jawa Tengah sebagai Provinsi Maju yang Berkelanjutan untuk Menuju Indonesia Emas 2045”
+                    </h3>
+                </div>
+
+                <!-- Section Misi -->
+                <div class="card shadow-sm border-0 p-4 p-md-5 mb-5">
+                    <h4 class="fw-bold text-dark mb-4 border-bottom pb-2">
+                        <i class="bi bi-compass-fill text-primary me-2"></i>MISI
+                    </h4>
+                    
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">1</div>
+                            <p class="mb-0 text-secondary align-self-center">Meningkatkan Layanan Dasar yang Inklusif untuk mewujudkan Sumber Daya Manusia yang Mandiri, Kompetitif dan Berwawasan Global.</p>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">2</div>
+                            <p class="mb-0 text-secondary align-self-center">Meningkatkan Pertumbuhan Perekonomian Perkotaan dan Pedesaan Berbasis Sektor Unggulan yang Inovatif, Mandiri dan Berkelanjutan.</p>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">3</div>
+                            <p class="mb-0 text-secondary align-self-center">Mewujudkan Tata Kelola Pemerintahan yang Responsif dan Kolaboratif dengan mengedepankan nilai-nilai Integritas.</p>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">4</div>
+                            <p class="mb-0 text-secondary align-self-center">Mewujudkan Pembangunan Infrastruktur Jawa Tengah yang merata dan berkeadilan, melalui perencanaan tata ruang yang responsif.</p>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">5</div>
+                            <p class="mb-0 text-secondary align-self-center">Menjaga Stabilitas dan Kondusivitas Daerah dengan pendekatan budaya lokal, serta menjamin kebebasan warga dalam menjalankan ibadah, perlindungan kesejahteraan sosial serta hak asasi manusia yang berkeadilan.</p>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 p-3 rounded bg-light">
+                            <div class="misi-number">6</div>
+                            <p class="mb-0 text-secondary align-self-center">Menjaga iklim Investasi yang kondusif dan kolaboratif untuk membuka kesempatan kerja dan berusaha seluas-luasnya bagi warga Jawa Tengah, serta mengembangkan pembiayaan pembangunan yang partisipatif, kolaboratif dan terintegrasi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 11 Program Prioritas -->
+                <div class="mb-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <h4 class="fw-bold text-dark mb-0">
+                            <i class="bi bi-star-fill text-warning me-2"></i>11 Program Prioritas Gubernur Jawa Tengah
+                        </h4>
+                    </div>
+
+                    <div class="row g-3">
+                        <!-- Program 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">1</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Tata Kelola Pemerintahan</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Melahirkan Pemerintahan yang Good Clear Government dan Collaborative Governance melalui peningkatan kesejahteraan, profesionalitas dan kualitas ASN dan Perangkat Desa.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">2</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Pesantren Obah</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Pengembangan pesantren melalui penambahan dana pengembangan fasilitas dan kualitas santri.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">3</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Ekosistem Ekonomi Syariah</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Melahirkan ekosistem ekonomi syariah melalui penguatan regulasi dan pengembangan wisata ramah muslim.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 4 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">4</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Desa Maju dan Berdaya</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Pembangunan lumbung kesejahteraan, produk unggulan go internasional, Sistem Informasi Desa (SID), dan Tim Tanggap Bencana.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">5</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Infrastruktur Layak Huni</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Permukiman Layak Huni melalui 1 KK 1 rumah layak huni, pengembangan Pusat Rekreasi & Promosi Pembangunan, dan Gelanggang Olahraga Internasional.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 6 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">6</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Lingkungan & Bencana</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Penanggulangan bencana dan keberlanjutan lingkungan melalui Mageri Segoro untuk mengamankan garis pantai.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 7 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">7</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Dukungan Petani, Nelayan & Buruh</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Pupuk mudah bagi petani, subsidi solar bagi nelayan, serta ketersediaan day care untuk buruh di Kawasan Industri.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 8 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">8</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Moderasi Beragama</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Penguatan moderasi beragama dan wawasan kebangsaan melalui penguatan regulasi, pendidikan, dan pelatihan.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 9 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">9</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Layanan Kesehatan Paripurna</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Pelayanan kesehatan yang paripurna melalui asuransi kesehatan gratis bagi warga miskin.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 10 -->
+                        <div class="col-md-6 col-lg-6">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">10</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Taruna Karya Mandiri</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Program Kartu Zilenial untuk membuka kesempatan dan lapangan kerja seluas-luasnya bagi generasi muda.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program 11 -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="program-card p-3 shadow-sm">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <div class="program-badge">11</div>
+                                    <h6 class="fw-bold mb-0 text-dark">Pendidikan Berkualitas & Merata</h6>
+                                </div>
+                                <p class="small text-muted mb-0">Peningkatan kesejahteraan guru dan pengajar agama, serta beasiswa untuk siswa miskin, guru, santri, dan penghafal Qur'an untuk sekolah dalam dan luar negeri.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
