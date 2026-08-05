@@ -120,18 +120,17 @@ once:true
 
                     <!-- Beranda -->
 <li class="nav-item">
-    <a href="index.html" class="nav-link active">Beranda</a>
+    <a href="index.html"
+    class="nav-link active"
+    data-lang="home">Beranda</a>
 </li>
 
 <!-- Profil -->
 <li class="nav-item dropdown">
 
     <a class="nav-link dropdown-toggle"
-       href="javascript:void(0)">
-
-        Profil
-
-    </a>
+    data-lang="profile">
+    Profil</a>
 
     <ul class="dropdown-menu">
 
@@ -151,11 +150,7 @@ once:true
 <li class="nav-item dropdown">
 
     <a class="nav-link dropdown-toggle"
-       href="javascript:void(0)">
-
-        Layanan
-
-    </a>
+    data-lang="services">Layanan</a>
 
     <ul class="dropdown-menu">
 
@@ -283,16 +278,20 @@ once:true
 
             <div class="col-lg-6">
 
-                <span class="hero-badge">
-                    Website Resmi
+                <span
+                class="hero-badge"
+                data-lang="hero_badge">
+                Website Resmi
                 </span>
 
                 <h1>
-                    Pelayanan Pajak Kendaraan Bermotor
-                    <span>Lebih Cepat & Modern</span>
+                    <span data-lang="hero_title1">Pelayanan Pajak</span><br>
+                    <span data-lang="hero_title2">Kendaraan Bermotor</span><br>
+                    <span data-lang="hero_highlight">Lebih Cepat & Modern</span>
                 </h1>
+                
 
-                <p>
+                <p data-lang="hero_desc">
                     UPPD Kota Semarang II berkomitmen memberikan pelayanan
                     yang cepat, transparan, profesional, dan mudah diakses
                     oleh seluruh masyarakat Jawa Tengah.
@@ -300,14 +299,14 @@ once:true
 
                 <div class="hero-button">
 
-                    <a href="#" class="btn btn-primary btn-lg">
+                    <a class="btn btn-primary">
                         <i class="bi bi-car-front-fill"></i>
-                        Layanan
+                        <span data-lang="service_btn">Layanan</span>
                     </a>
 
-                    <a href="#" class="btn btn-outline-light btn-lg">
+                    <a class="btn btn-outline-light">
                         <i class="bi bi-file-earmark-text"></i>
-                        Persyaratan
+                        <span data-lang="requirement_btn">Persyaratan</span>
                     </a>
 
                 </div>
