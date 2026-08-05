@@ -278,7 +278,7 @@
                 <!-- Visual Plat Nomor -->
                 <div class="plat-container">
                     <div class="plat-input-group">
-                        <input type="text" id="platDepan" class="plat-input" placeholder="H" maxlength="2" required value="H">
+                        <input type="text" id="platDepan" class="plat-input" placeholder="H" maxlength="2" required value="H" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '').toUpperCase();">
                     </div>
                     <div class="plat-input-group center">
                         <input type="number" id="platAngka" class="plat-input" placeholder="1234" oninput="if (this.value.length > 4) this.value = this.value.slice(0, 4);" required>
