@@ -281,7 +281,7 @@
                         <input type="text" id="platDepan" class="plat-input" placeholder="H" maxlength="2" required value="H">
                     </div>
                     <div class="plat-input-group center">
-                        <input type="number" id="platAngka" class="plat-input" placeholder="1234" maxlength="4" required>
+                        <input type="number" id="platAngka" class="plat-input" placeholder="1234" oninput="if (this.value.length > 4) this.value = this.value.slice(0, 4);" required>
                     </div>
                     <div class="plat-input-group">
                         <input type="text" id="platBelakang" class="plat-input" placeholder="ABC" maxlength="3" required>
