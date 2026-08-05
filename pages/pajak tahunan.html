@@ -147,6 +147,7 @@
             gap: 10px;
         }
 
+        /* Style Netral Tombol TNKB */
         .tnkb-btn {
             padding: 8px 18px;
             border-radius: 20px;
@@ -159,10 +160,27 @@
             transition: all 0.2s;
         }
 
-        .tnkb-btn.active {
-            background-color: #16a34a;
+        .tnkb-btn:hover {
+            border-color: #94a3b8;
+        }
+
+        /* Style Khusus Warna Saat Tombol AKTIF */
+        .tnkb-btn[data-color="hitam"].active {
+            background-color: #000000;
             color: #ffffff;
-            border-color: #16a34a;
+            border-color: #000000;
+        }
+
+        .tnkb-btn[data-color="merah"].active {
+            background-color: #dc2626;
+            color: #ffffff;
+            border-color: #dc2626;
+        }
+
+        .tnkb-btn[data-color="kuning"].active {
+            background-color: #eab308;
+            color: #ffffff;
+            border-color: #eab308;
         }
 
         /* Mock Captcha Box */
@@ -292,9 +310,9 @@
                 <div class="tnkb-section">
                     <div class="tnkb-title">Pilih Warna TNKB</div>
                     <div class="tnkb-options">
-                        <button type="button" class="tnkb-btn active">Hitam &#10004;</button>
-                        <button type="button" class="tnkb-btn">Merah</button>
-                        <button type="button" class="tnkb-btn">Kuning</button>
+                        <button type="button" class="tnkb-btn active" data-color="hitam">Hitam &#10004;</button>
+                        <button type="button" class="tnkb-btn" data-color="merah">Merah</button>
+                        <button type="button" class="tnkb-btn" data-color="kuning">Kuning</button>
                     </div>
                 </div>
 
@@ -358,6 +376,24 @@
     </div>
 
     <script>
+        // Logic Pilihan Warna TNKB
+        const tnkbButtons = document.querySelectorAll('.tnkb-btn');
+
+        tnkbButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Hapus class 'active' dan simbol centang dari semua tombol
+                tnkbButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.innerHTML = btn.innerText.replace(' ✔', '');
+                });
+
+                // Tambahkan class 'active' dan simbol centang ke tombol yang diklik
+                this.classList.add('active');
+                this.innerHTML += ' &#10004;';
+            });
+        });
+
+        // Logic Captcha
         const captchaCheck = document.getElementById('captchaCheck');
         const btnSubmit = document.getElementById('btnSubmit');
 
@@ -369,6 +405,7 @@
             }
         });
 
+        // Logic Form Submit
         document.getElementById('pajakForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
