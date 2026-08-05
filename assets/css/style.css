@@ -1495,3 +1495,254 @@ NAVBAR DROPDOWN
     color: #fff;
     padding-left: 25px;
 }
+
+/* =====================================
+PERPANJANGAN STNK
+===================================== */
+
+.form-control,
+.form-select{
+
+    border-radius:14px;
+    border:1px solid #d8dee8;
+    padding:14px 16px;
+    box-shadow:none;
+    transition:.3s;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#005BAC;
+    box-shadow:0 0 0 .2rem rgba(0,91,172,.15);
+
+}
+
+.form-label{
+
+    font-weight:600;
+    margin-bottom:8px;
+    color:#003C78;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+.service-card form{
+
+    margin-top:15px;
+
+}
+
+/* =====================================
+PERSYARATAN
+===================================== */
+
+.service-card ul{
+
+    margin:20px 0 0;
+    padding-left:20px;
+
+}
+
+.service-card ul li{
+
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.8;
+
+}
+
+/* =====================================
+ALUR PELAYANAN
+===================================== */
+
+.service-box{
+
+    text-align:center;
+
+}
+
+.service-box h4{
+
+    margin-top:20px;
+
+}
+
+.service-top{
+
+    margin:auto;
+    margin-bottom:20px;
+
+}
+
+/* =====================================
+FAQ
+===================================== */
+
+.accordion-button{
+
+    font-weight:600;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#005BAC;
+    color:white;
+
+}
+
+.accordion-body{
+
+    line-height:1.8;
+    color:#666;
+
+}
+
+/* =====================================
+GOOGLE MAPS
+===================================== */
+
+.maps iframe{
+
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:20px;
+
+}
+
+/* =====================================
+CTA
+===================================== */
+
+.statistics h2{
+
+    font-size:42px;
+
+}
+
+.statistics p{
+
+    font-size:17px;
+
+}
+
+/* =====================================
+BUTTON
+===================================== */
+
+.hero-button .btn{
+
+    min-width:220px;
+
+}
+
+.btn-primary{
+
+    background:#005BAC;
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#00468A;
+
+}
+
+/* =====================================
+UPLOAD FILE
+===================================== */
+
+input[type=file]{
+
+    padding:12px;
+
+}
+
+/* =====================================
+RESPONSIVE
+===================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:70px 0;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.hero-button{
+
+flex-direction:column;
+
+}
+
+.hero-button .btn{
+
+width:100%;
+
+}
+
+.service-card{
+
+padding:25px;
+
+}
+
+.statistics{
+
+text-align:center;
+
+}
+
+.statistics .btn{
+
+margin-top:20px;
+
+width:100%;
+
+}
+
+}
